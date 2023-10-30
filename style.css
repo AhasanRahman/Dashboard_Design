@@ -7,7 +7,8 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .main{
-    width: 1540px;
+    max-width: 1540px;
+    width: 100%;
     height: auto;
     border-radius: 24px;
   background: #FFF;
@@ -25,13 +26,41 @@ body{
     background-color: #E74C3C ;
     margin-top: 30px;
     margin-left: 50px;
+    transition: all 0.5s ease;
+  
+}
+
+#btn{
+    cursor: pointer;
+    margin-left: 50%; 
     
 }
-.logo{
-    margin-left: 70px;
+ 
+.sidenavbar.active{
+    width: 200px;
+
 }
+
+.sidenavbar .logo{
+    display: flex;
+    pointer-events: none;
+    justify-content: center;
+}
+
+.sidenavbar.active .logo{
+    pointer-events: none;
+}
+
 .sidenavbar div i{
     margin-left: 60px;
+
+}
+ul li i{
+    opacity: 1;
+}
+.active ul li i{
+    opacity: 0;
+    transition: 1.3s;
 }
 
 ul li{
@@ -46,6 +75,29 @@ ul li{
     color:#ffff ;
    
 }
+ 
+
+.sidenavbar ul li a{
+    opacity: 1;
+    pointer-events: none;
+}
+
+
+.sidenavbar.active ul li a{
+    opacity: 0;
+    pointer-events: auto;
+     transition: 1s;
+}
+
+.sidenavbar ul li:hover .tooltip{
+transition: all 0.5s ease;
+top: 50%;
+opacity: 1;
+
+}
+
+
+
 .sidenavbar i{
     color: #fff;
     font-size: 20px;

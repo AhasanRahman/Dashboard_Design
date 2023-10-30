@@ -16,19 +16,31 @@
 
     <div class="main">
 <div class="sidenavbar">
-    <div class="logo"><img src="Graduation Cap.svg" ></div>
+    <div class="logo"><img src="Graduation Cap.svg" >
+        
+    </div>
+
+    <div><i class="fa-solid fa-bars" id="btn"></i></div>
+    
     <ul>
-        <li> <i class="fa-solid fa-table-columns"></i> <a class="active" href="#">Dashboard</a></li>
-        <li> <i class="fa-solid fa-pen-to-square"></i><a href="#">Registration</a></li>
+        <li>
+            <i class="fa-solid fa-table-cells-large"></i><a href="#">Dashboard</a>
+        </li>
+        <li> <i class="fa-solid fa-pen-to-square"></i><a href="#">Registration</a>
+        </li>
         <li> <i class="fa-solid fa-money-check"></i><a href="#">Payment Info</a></li>
         <li><i class="fa-regular fa-book"></i><a href="#">Courses</a></li>
         <li><i class="fa-solid fa-message"></i><a href="#">Notice</a></li>
         <li><i class="fa-solid fa-calendar-days"></i><a href="#">Schedule</a></li>
+        
+        <li><i class="fa-solid fa-arrow-right-from-bracket" id="logout"></i><a href="#">Logout</a></li>
+
     </ul>
     
-    <div><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#">Logout</a></div>
+    <!-- <div><i class="fa-solid fa-arrow-right-from-bracket" id="logout"></i><a href="#">Logout</a></div> -->
 
-</div>
+
+</div>   
 <div class="rightmain">
     <div class="header1">
 
@@ -126,16 +138,24 @@
              <span>See more</span>
     </div>
 </div>
-             
-           
+                   
         </div>
 
     </div>
     
-
 </div>
 
     </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidenavbar = document.querySelector(".sidenavbar");
+
+        btn.onclick = function(){
+            sidenavbar.classList.toggle("active");
+        }
+
+    </script>
 
  </body>
  </html>
