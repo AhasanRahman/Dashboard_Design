@@ -7,25 +7,25 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .main{
-    max-width: 1540px;
-    width: 100%;
-    height: auto;
-    border-radius: 24px;
+    max-width:1920px;
+    height: 100vh;
+    border-radius: 20px;
   background: #FFF;
-  box-shadow: 12px 12px 48px 24px rgba(0, 0, 0, 0.12);
+  /* box-shadow: 12px 12px 48px 24px rgba(0, 0, 0, 0.12); */
   margin: 0 auto;
   display: flex;
+  gap: 50px;
 }
 .sidenavbar{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 233px;
+    max-width: 263px;
     height: 880px;
     border-radius: 24px;
     background-color: #E74C3C ;
     margin-top: 30px;
-    margin-left: 50px;
+    margin-left: 80px;
     transition: all 0.5s ease;
   
 }
@@ -33,11 +33,14 @@ body{
 #btn{
     cursor: pointer;
     margin-left: 50%; 
+    font-size: 35px;
+     
     
 }
  
 .sidenavbar.active{
-    width: 200px;
+    width: 170px;
+     
 
 }
 
@@ -79,7 +82,7 @@ ul li{
 
 .sidenavbar ul li a{
     opacity: 1;
-    pointer-events: none;
+     
 }
 
 
@@ -89,15 +92,6 @@ ul li{
      transition: 1s;
 }
 
-.sidenavbar ul li:hover .tooltip{
-transition: all 0.5s ease;
-top: 50%;
-opacity: 1;
-
-}
-
-
-
 .sidenavbar i{
     color: #fff;
     font-size: 20px;
@@ -106,13 +100,15 @@ opacity: 1;
 }
  a:hover{
     background-color: #F1948A ;
-    padding:  5px;
     border-radius: 5px;
 }
  
+.rightmain{
+    max-width: 1400px;
+}
 
 .header1{
-    width: 1100px;
+    max-width: 1400px;
     height: 80px;
     margin-left: 50px;
     display: flex;
@@ -121,20 +117,20 @@ opacity: 1;
     margin-top: 30px;
 }
 .searchbar{
-    width: 400px;
+    max-width: 500px;
     display: flex;
     align-items: center;
     
 }
 input[type=text]{
-    width: 395px;
+    width: 450px;
     padding: 16px 26px;
     border-radius: 24px;
     background: #FFF;
     box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
     border: none;
    text-align: right;
-   font-size: 17px;
+   font-size: 18px;
    outline: none;
 
 }
@@ -153,7 +149,7 @@ input[type=text]{
     margin-left: 10px;
 }
 .header2{
-    width: 1100px;
+    max-width: 1300px;
     height: 266px;
     margin-left: 50px;
     margin-top: 20px;
@@ -162,12 +158,12 @@ input[type=text]{
     color: #ffff;
 }
 .header2 p{
-    margin-top: 0px;
     margin-left: 70px;
+    line-height: 80px;
 }
 .header2 h1{
     margin-left: 70px;
-    margin-top: 90px;
+    margin-top: 40px;
     height: 52px;
     font-size: 32px;
     font-weight: 600;
@@ -183,38 +179,38 @@ input[type=text]{
 }
 .main-container{
     display: flex;
-    margin-left: 50px;
+    margin-left: 60px;
     column-gap: 40px;
+    max-width: 1400px;
 }
 .left-container{
     margin-top: 20px;
-    width: 730px;
-    height: 500px;
+    max-width: 850px;
+    height: 480px;
 
 }
 
 .left-container h3{
-    font-size: 20px;
-    font-weight: 600;
-    color: #000000;
+    font-size: 15px;
+     
 }
 .right-container{
     margin-top: 20px;
-    width: 330px;
-    height: 500px;
+    max-width: 420px;
+    min-height: 500px;
     
 }
 section h3{
-    margin-top: 25px;
+    margin-top: 30px;
 }
 .carddiv1{
     display: flex;
-    column-gap: 20px;
+    column-gap: 30px;
     
 }
 .carddiv1 div{
-    width: 230px;
-    height: 200px;
+    width:  260px;
+    height: 210px;
     text-align: center;
     border-radius: 24px;
     background: #FFF;
@@ -236,11 +232,11 @@ section h3{
 .carddiv2{
     display: flex;
     margin-top: 20px;
-    column-gap: 15px;
+    column-gap: 30px;
 }
 .carddiv2 div{
-    width: 365px;
-    height: 180px;
+    width: 405px;
+    height: 170px;
     border-radius: 10px;
    
     
@@ -254,9 +250,9 @@ section h3{
     background-color: #FDEDEC ;
 }
 .itemdiv p{
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: #E74C3C;
     line-height: 24px;
@@ -317,7 +313,7 @@ section h3{
 .description {
     margin-top: 20px;
     height: 300px;
-    width: 330px;
+    width: 380px;
     border: 1px ;
     background-color: #fff;
     border-radius: 10px;
@@ -347,3 +343,173 @@ font-size: 14px;
 color: #E74C3C;
 margin-left: 20px;
 }
+
+/* Mobile responsive */
+/* 
+@media (max-width:430px){
+    .main{
+        max-width:430px;
+        width: 100%;
+        height: 100vh;
+         gap: 10px;
+    }
+
+    .sidenavbar{
+        width: 70px;
+        height: 680px;
+        margin-top: 0;
+        margin-left: 0;
+        opacity: ;
+     
+    }
+    #btn{
+        cursor: pointer;
+        margin-left: 40%; 
+        font-size: 20px;
+        
+    }
+    .sidenavbar.active{
+        width: 140px;
+    
+    }
+    
+    .sidenavbar .logo{
+        pointer-events: none;
+        
+    }
+    .sidenavbar.active .logo{
+        pointer-events: none;
+       
+    }
+    .sidenavbar div i{
+        margin-left: 10px;
+    
+    }
+    ul li i{
+        opacity: 0;
+    }
+    .active ul li i{
+        opacity: 1;
+        transition: 1.3s;
+    }
+
+    ul li{
+         
+        padding: 20px;
+        margin-left:10px;
+    }
+     a{
+        font-size: 12px;
+       
+    }
+     
+    .sidenavbar ul li a{
+        opacity: 0;
+         
+    }
+    
+    .sidenavbar.active ul li a{
+        opacity: 1;
+         transition: 1s;
+    }
+    .sidenavbar i{
+        font-size: 15px;
+        
+    }
+    .rightmain{
+        width:;
+    }
+    
+    .header1{
+        display: block;
+        width: 340px;
+        height: 30px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .searchbar{
+        width: 100px;
+       
+    
+    }
+    input[type=text]{
+        width: 200px;
+        padding: 10px 16px;
+       font-size: 12px;
+    }
+    .profile{
+        margin-top: 10px;
+    }
+    .profile p{
+        font-size: 10px;
+        font-weight: 400;
+        
+    }
+    .profile span{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .header2{
+        max-width: 230px;
+        height: 300px;
+        margin-left: 5px;
+        margin-top: 80px;
+         
+    }
+    .header2 p{
+        line-height: 60px;
+        font-size: 14px;
+
+    }
+    .header2 h1{
+        margin-top: 30px;
+        font-size: 16px;
+         
+    }
+    .header2 h5{
+        margin-top: 20px;
+        font-size: 14px;
+        
+    }
+    .main-container{
+        display: block;
+        margin-left: 10px;
+        column-gap: 10px;
+        height: 1400px;
+    }
+    .left-container{
+        margin-top: 20px;
+        width: 850px;
+        height: 480px;
+    
+    }
+    .carddiv1{
+        display: block;
+        row-gap: 10px;
+        height: auto;
+        width: 100%;
+        
+    }
+    .carddiv1 div{
+        width: 250px;
+        height: 200px;
+        text-align: center; 
+        row-gap: 50px;
+        margin: 10px 0;
+        
+    }
+    .carddiv2{
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+       
+    }
+    .carddiv2 div{
+        width: 205px;
+        height: 170px;
+        border-radius: 10px;
+       
+        
+    }
+
+} */
