@@ -1,47 +1,47 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 body{
     font-family: 'Poppins', sans-serif;
 }
 .main{
-    max-width:1920px;
-    height: 100vh;
+    width: 100%;
+    max-width:1820px;
     border-radius: 20px;
   background: #FFF;
-  /* box-shadow: 12px 12px 48px 24px rgba(0, 0, 0, 0.12); */
-  margin: 0 auto;
   display: flex;
+  justify-content: center;
   gap: 50px;
+  overflow: hidden;
 }
 .sidenavbar{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     max-width: 263px;
-    height: 880px;
+    height: auto;
     border-radius: 24px;
     background-color: #E74C3C ;
     margin-top: 30px;
-    margin-left: 80px;
     transition: all 0.5s ease;
   
 }
 
 #btn{
     cursor: pointer;
-    margin-left: 50%; 
+    margin-left:50% ; 
+    transform: translate(-50%);
     font-size: 35px;
      
     
 }
  
 .sidenavbar.active{
-    width: 170px;
+    max-width: 170px;
      
-
 }
 
 .sidenavbar .logo{
@@ -129,7 +129,6 @@ input[type=text]{
     background: #FFF;
     box-shadow: 8px 8px 48px 8px rgba(0, 0, 0, 0.08);
     border: none;
-   text-align: right;
    font-size: 18px;
    outline: none;
 
@@ -149,8 +148,8 @@ input[type=text]{
     margin-left: 10px;
 }
 .header2{
-    max-width: 1300px;
-    height: 266px;
+    max-width: 1400px;
+    min-height: 266px;
     margin-left: 50px;
     margin-top: 20px;
     background-color: #E74C3C;
@@ -186,12 +185,13 @@ input[type=text]{
 .left-container{
     margin-top: 20px;
     max-width: 850px;
-    height: 480px;
+    min-height: 480px;
 
 }
 
 .left-container h3{
     font-size: 15px;
+    line-height: 40px;
      
 }
 .right-container{
@@ -238,7 +238,6 @@ section h3{
     width: 405px;
     height: 170px;
     border-radius: 10px;
-   
     
 }
  
@@ -249,13 +248,13 @@ section h3{
     align-items: center; 
     background-color: #FDEDEC ;
 }
+ 
 .itemdiv p{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
     color: #E74C3C;
-    line-height: 24px;
+    line-height:normal;
 }
 .itemdiv img{
     margin-top: 40px;
@@ -274,17 +273,20 @@ section h3{
     background-color: #FDEDEC ;
 }
 .itemdiv2 p{
-    width: 200px;
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 17px;
     color: #E74C3C;
+    line-height:normal;
 }
 .itemdiv2 span{
     background-color: #E74C3C;
     padding: 6px 48px;
     border-radius: 25px;
     color: #FFF;
+}
+.itemdiv2 img{
+    margin-right: 30px;
 }
 
 .right-container h4{
@@ -327,7 +329,7 @@ margin-top: 30px;
 .description div h5{
     font-size: 16px;
     font-weight: 600;
-    line-height: normal;
+    line-height: 45px;
     color: #000000;
     margin-left:20px ;
     
@@ -344,27 +346,26 @@ color: #E74C3C;
 margin-left: 20px;
 }
 
+
 /* Mobile responsive */
-/* 
-@media (max-width:430px){
+
+/*@media (max-width:450px){
     .main{
-        max-width:430px;
-        width: 100%;
+         width: 100%;
         height: 100vh;
-         gap: 10px;
+         gap: ;
     }
 
-    .sidenavbar{
+     .sidenavbar{
         width: 70px;
         height: 680px;
-        margin-top: 0;
-        margin-left: 0;
+        
         opacity: ;
      
     }
     #btn{
         cursor: pointer;
-        margin-left: 40%; 
+        margin-left: ; 
         font-size: 20px;
         
     }
@@ -382,7 +383,7 @@ margin-left: 20px;
        
     }
     .sidenavbar div i{
-        margin-left: 10px;
+        margin-left: ;
     
     }
     ul li i{
@@ -396,7 +397,7 @@ margin-left: 20px;
     ul li{
          
         padding: 20px;
-        margin-left:10px;
+        margin-left:px;
     }
      a{
         font-size: 12px;
@@ -424,7 +425,7 @@ margin-left: 20px;
         display: block;
         width: 340px;
         height: 30px;
-        margin-left: 0px;
+        margin-left: ;
         margin-top: 20px;
     }
     .searchbar{
@@ -447,12 +448,12 @@ margin-left: 20px;
     }
     .profile span{
         font-size: 12px;
-        margin-left: 10px;
+        margin-left:  ;
     }
     .header2{
         max-width: 230px;
         height: 300px;
-        margin-left: 5px;
+        margin-left:  ;
         margin-top: 80px;
          
     }
@@ -510,6 +511,6 @@ margin-left: 20px;
         border-radius: 10px;
        
         
-    }
+    } 
 
-} */
+}*/
