@@ -10,23 +10,22 @@ body{
 .main{
     width: 100%;
     max-width:1820px;
-    border-radius: 20px;
+    height: auto;
   background: #FFF;
   display: flex;
-  justify-content: center;
-  gap: 50px;
-  overflow: hidden;
+  justify-content: space-around;
+  
+  margin: 0 auto;
 }
 .sidenavbar{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     max-width: 263px;
-    height: auto;
     border-radius: 24px;
     background-color: #E74C3C ;
-    margin-top: 30px;
-    transition: all 0.5s ease;
+     margin-top: 30px;
+    transition:  1.2s ease;
   
 }
 
@@ -41,6 +40,7 @@ body{
  
 .sidenavbar.active{
     max-width: 170px;
+    transition: 1s ease ;
      
 }
 
@@ -109,21 +109,22 @@ ul li{
 
 .header1{
     max-width: 1400px;
-    height: 80px;
-    margin-left: 50px;
+    height: 70px;
+    margin-left: ;
     display: flex;
     justify-content: space-between;
     text-align: center;
     margin-top: 30px;
 }
 .searchbar{
-    max-width: 500px;
+   max-width: 500px;
     display: flex;
     align-items: center;
+     
     
 }
 input[type=text]{
-    width: 450px;
+    width: 550px;
     padding: 16px 26px;
     border-radius: 24px;
     background: #FFF;
@@ -150,7 +151,6 @@ input[type=text]{
 .header2{
     max-width: 1400px;
     min-height: 266px;
-    margin-left: 50px;
     margin-top: 20px;
     background-color: #E74C3C;
     border-radius: 20px;
@@ -178,7 +178,7 @@ input[type=text]{
 }
 .main-container{
     display: flex;
-    margin-left: 60px;
+    margin-left: px;
     column-gap: 40px;
     max-width: 1400px;
 }
@@ -200,7 +200,7 @@ input[type=text]{
     min-height: 500px;
     
 }
-section h3{
+ h3{
     margin-top: 30px;
 }
 .carddiv1{
@@ -210,7 +210,7 @@ section h3{
 }
 .carddiv1 div{
     width:  260px;
-    height: 210px;
+    height: 250px;
     text-align: center;
     border-radius: 24px;
     background: #FFF;
@@ -347,91 +347,33 @@ margin-left: 20px;
 }
 
 
-/* Mobile responsive */
+/* *************Mobile Responsive *************/
 
-/*@media (max-width:450px){
+@media (max-width:450px){
     .main{
-         width: 100%;
-        height: 100vh;
-         gap: ;
+         display: inline;
+           
     }
 
      .sidenavbar{
-        width: 70px;
-        height: 680px;
-        
-        opacity: ;
-     
-    }
-    #btn{
-        cursor: pointer;
-        margin-left: ; 
-        font-size: 20px;
-        
-    }
-    .sidenavbar.active{
-        width: 140px;
-    
-    }
-    
-    .sidenavbar .logo{
-        pointer-events: none;
-        
-    }
-    .sidenavbar.active .logo{
-        pointer-events: none;
-       
-    }
-    .sidenavbar div i{
-        margin-left: ;
-    
-    }
-    ul li i{
-        opacity: 0;
-    }
-    .active ul li i{
-        opacity: 1;
-        transition: 1.3s;
-    }
+        max-width: 100%;
+        margin-top: 0;  
 
-    ul li{
-         
-        padding: 20px;
-        margin-left:px;
-    }
-     a{
-        font-size: 12px;
-       
-    }
-     
-    .sidenavbar ul li a{
-        opacity: 0;
-         
-    }
-    
-    .sidenavbar.active ul li a{
-        opacity: 1;
-         transition: 1s;
-    }
-    .sidenavbar i{
-        font-size: 15px;
-        
     }
     .rightmain{
-        width:;
+        width: 100%;
     }
-    
     .header1{
-        display: block;
-        width: 340px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 380px;
         height: 30px;
-        margin-left: ;
-        margin-top: 20px;
+          
     }
     .searchbar{
         width: 100px;
        
-    
     }
     input[type=text]{
         width: 200px;
@@ -448,69 +390,91 @@ margin-left: 20px;
     }
     .profile span{
         font-size: 12px;
-        margin-left:  ;
-    }
-    .header2{
-        max-width: 230px;
-        height: 300px;
-        margin-left:  ;
-        margin-top: 80px;
-         
-    }
-    .header2 p{
-        line-height: 60px;
-        font-size: 14px;
-
-    }
-    .header2 h1{
-        margin-top: 30px;
-        font-size: 16px;
-         
-    }
-    .header2 h5{
-        margin-top: 20px;
-        font-size: 14px;
         
     }
-    .main-container{
-        display: block;
-        margin-left: 10px;
-        column-gap: 10px;
-        height: 1400px;
-    }
-    .left-container{
-        margin-top: 20px;
-        width: 850px;
-        height: 480px;
+  .header2{
+    width: 100%;
+    min-height: 266px;
+    margin-top: 20px; 
     
-    }
-    .carddiv1{
-        display: block;
-        row-gap: 10px;
-        height: auto;
-        width: 100%;
-        
-    }
-    .carddiv1 div{
-        width: 250px;
-        height: 200px;
-        text-align: center; 
-        row-gap: 50px;
-        margin: 10px 0;
-        
-    }
-    .carddiv2{
-        display: block;
-        margin-top: 20px;
-        width: 100%;
-       
-    }
-    .carddiv2 div{
-        width: 205px;
-        height: 170px;
-        border-radius: 10px;
-       
-        
-    } 
+  }
+  .header2 p{
+    margin: 0;
+    text-align: center;
+  }
+  .header2 h1{
+    margin: 0;
+    text-align: center;
+  }
+  .main-container{
+    width: 100%;
+    display: block;
+    column-gap: 40px;
+    
+}
+.left-container{
+    width: 100%;
+    margin-top: 20px;
 
-}*/
+}
+.right-container h4{
+     
+    text-align: center;
+}
+.right-container div img{
+    display: inline-block;  
+
+}
+.carddiv1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.carddiv2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.carddiv2 .itemdiv{
+    max-width: 340px;
+    height: 170px;
+       
+}
+.carddiv2 .itemdiv2{
+    max-width: 340px;
+    height: 170px;
+     
+    
+}
+.right-container{
+    width: 100%;
+}
+.description {
+    width: 100%;
+    margin: 20px auto 0 auto;
+    height: 300px;
+    max-width: 340px;
+     
+}
+.description div{
+    width: 100%;
+    text-align: center;
+}
+.notice {
+    width: 100%;
+    max-width: 360px;
+}
+.left-container .indexh3{
+    display: ;
+    text-align: center;
+}
+ 
+
+}
+     
